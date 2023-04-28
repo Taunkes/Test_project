@@ -14,6 +14,6 @@ for data in new_tittles: # НАЗВАНИЯ
         if data.find('a', class_='link-default') is not None: #Если название не пустая
             tittles_list.append(data.text) #Добавление в список
 
-tittles_list = list(map(lambda x: x.strip(), tittles_list)).replace('[', '').replace #Сортировка
+tittles_list = list(map(lambda x: x.strip(), tittles_list)) #Сортировка
 
 print(f'tittles list = {tittles_list}') #Принт в консоль для проверки полученых файлов
